@@ -445,6 +445,7 @@ left: -15px;
   font-size: 25px;
   display: block;
   padding: .6rem;
+  color: var(--golden-color);
 }
 
 /* FOOTER STYLES */
