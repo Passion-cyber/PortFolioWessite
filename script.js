@@ -10,12 +10,8 @@ closeButton.addEventListener("click", () => {
   navContainer.classList.remove("open-nav");
 });
 
-function outsideClick(e) {
-  if ("click" == navContainer.classList.remove("open-nav"));
-  navContainer.classList.remove("open-nav");
-}
 
-// Tech Scroll
+//Scroll Reaveal
 window.sr = ScrollReveal();
 sr.reveal(".logo", {
   duration: 2000,
@@ -24,6 +20,12 @@ sr.reveal(".logo", {
 });
 
 sr.reveal("nav li", {
+  duration: 2000,
+  origin: "top",
+  distance: "100px",
+});
+
+sr.reveal(".open-btn", {
   duration: 2000,
   origin: "top",
   distance: "100px",
@@ -80,7 +82,7 @@ sr.reveal(".individual-items", {
   duration: 2000,
   origin: "bottom",
   viewFactor: 0.2,
-  distance: "300px",
+  distance: "100px",
 });
 
 sr.reveal(".contact-text", {
@@ -96,24 +98,28 @@ sr.reveal(".contact-button", {
   viewFactor: 0.2,
   distance: "300px",
 });
+
 sr.reveal(".footer-logo", {
   duration: 2000,
   origin: "left",
   viewFactor: 0.2,
   distance: "300px",
 });
+
 sr.reveal(".footer-nav", {
   duration: 2000,
   origin: "right",
   viewFactor: 0.2,
   distance: "200px",
 });
+
 sr.reveal(".footer-icons", {
   duration: 2000,
   origin: "left",
   viewFactor: 0.2,
   distance: "300px",
 });
+
 sr.reveal(".title", {
   duration: 2000,
   origin: "right",
@@ -129,10 +135,7 @@ sr.reveal(".hero-resume", {
   easing: "ease-in-out",
 });
 
-
-
 // Smooth Scrolling Effect On Navbar
-
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();

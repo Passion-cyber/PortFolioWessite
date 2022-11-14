@@ -151,7 +151,6 @@ nav a:hover{
     transform: translateX(0%);
 }
 
-
 /* HERO SECTION STYLES */
 .hero-wrapper{
   display: flex;
@@ -293,6 +292,7 @@ section#services{
   border: 2px solid var(--golden-color);
   margin-left: 2rem;
   border-radius: 7px;
+  margin: auto;
 }
 
 .sub-section-wrapper .section-1{
@@ -377,6 +377,14 @@ transition: 0.3s ease-in-out;
   display: inline-block;
   margin-top: 1rem;
   transition: all 0.3s ease;
+  position: relative;
+}
+
+.fa-big{
+  position: absolute;
+  font-size: 25px;
+  left: 73px;
+  top: -5px;
 }
 
 .item-links:hover{
